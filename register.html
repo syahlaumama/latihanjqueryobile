@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/jquery.mobile-1.4.5.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="asset/jquery.mobile-1.4.5.min.js"></script>
+    <title>Syahla | JQuery Mobile</title>
+</head>
+<body>
+    <div id="main" data-role="page">
+        <header data-role="header" data-position="fixed" data-theme="b">
+            <h1><img src="Images/ccit.png" height="100px" alt="Header Image" style="display:inline"/>   </h1>
+            <h1>Register</h1>
+            <a href="index.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-1">Back</a>
+        </header>
+
+        <div data-role="content" class="ui-conent customfont">
+            <form method="post" action="#">
+                <label for="name">Name:</label>
+                <input type="text" name="fname" id="name">
+
+                <label for="name">Address:</label>
+                <textarea name="address" id="textarea" cols="5" rows="80"></textarea>
+
+                <label for="name">E-mail ID:</label>
+                <input type="text" name="address" id="textarea">
+
+                <fieldset data-role="controlgroup" data-type="horizontal">
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                        <label for="name">Gender:</label>
+                    </div>
+                    <div class="ui-block-b">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="male" value="male">
+                    </div>
+                    <div class="ui-block-c">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                    </div>
+                  </div>
+                </fieldset>
+                <label for="slider-1">Age:</label>
+                <input type="range" name="slider-1" id="slider-1" value="21" min="18" max="60">
+                <input type="submit" value="Submit" data-inline="true">
+            </form>
+        </div>
+        <footer data-role="footer" data-position="fixed" data-theme="b">
+            <h3>&copy; Copyright - Syahla 2022</h3>
+         </footer>
+    </div>
+</body>
+</html>
